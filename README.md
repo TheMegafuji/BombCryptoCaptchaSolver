@@ -3,6 +3,7 @@
 A very compact implementation using just cv2 and ctypes, ready to be deployed to your own project.
 
 ###How does it work
+
 It takes multiple pictures (cropped to a smaller area) whilst moving the mouse in a sweep movement throughout the screen.
 
 The small pictures are joined together using bitwise or operation within the image:
@@ -26,11 +27,13 @@ The image is compared withing a preset of numbered images in a very shallow OCR 
 This will result in a numbered string with the number ordered.
 
 ###Sliding
+
 The slider is located with template matching and by using a small variation to avoid detection, it moves the slider towards the right while comparing the appeared numbers with the puzzle number.
 
 Once found the slider is let go, completing the captcha.
 
 ###Usage
+
 Clone this repository into a folder
 While in the directory, using Python 3.9 (suggested), do the following in the terminal:
 
@@ -46,6 +49,7 @@ You can run the CaptchaSolver by running:
 `python captchaSolver.py`
 
 ###Importing to your project
+
 You probably will have a way of targeting the window, if so, you can remove the code that targets the windows and the functions it uses (most of ctypes functions)
 
 You will need to specify the area in which your game is running, for performance purpose by creating the following dict:
@@ -75,6 +79,7 @@ slideAndDrop(m,number)
 ```
 
 ###Donations
+
 If you liked the project, consider donating to the following address:
 
 `0x07CdF7E94C637298315F134ebB02309896349Ad4`
