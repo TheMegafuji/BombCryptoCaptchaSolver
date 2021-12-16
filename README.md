@@ -2,7 +2,7 @@
 ![Working example](https://i.imgur.com/2AqbIJO.gif)
 A very compact implementation using just cv2 and ctypes, ready to be deployed to your own project.
 
-###How does it work
+##How does it work
 
 It takes multiple pictures (cropped to a smaller area) whilst moving the mouse in a sweep movement throughout the screen.
 
@@ -26,13 +26,13 @@ The image is compared withing a preset of numbered images in a very shallow OCR 
 
 This will result in a numbered string with the number ordered.
 
-###Sliding
+##Sliding
 
 The slider is located with template matching and by using a small variation to avoid detection, it moves the slider towards the right while comparing the appeared numbers with the puzzle number.
 
 Once found the slider is let go, completing the captcha.
 
-###Usage
+##Usage
 
 Clone this repository into a folder
 While in the directory, using Python 3.9 (suggested), do the following in the terminal:
@@ -48,7 +48,7 @@ You can run the CaptchaSolver by running:
 
 `python captchaSolver.py`
 
-###Importing to your project
+##Importing to your project
 
 You probably will have a way of targeting the window, if so, you can remove the code that targets the windows and the functions it uses (most of ctypes functions)
 
@@ -78,7 +78,7 @@ this will solve the captcha by comparing with the number found
 slideAndDrop(m,number)
 ```
 
-###Donations
+##Donations
 
 If you liked the project, consider donating to the following address:
 
