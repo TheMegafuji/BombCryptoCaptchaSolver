@@ -1,4 +1,6 @@
 ﻿## Solves Bombcrypto newest captcha
+ This project has been discontinued since the game removed the captcha.
+ 
 ![Working example](https://i.imgur.com/2AqbIJO.gif)
 A very compact implementation using just cv2 and ctypes, ready to be deployed to your own project.
 
